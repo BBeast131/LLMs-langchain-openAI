@@ -1,9 +1,9 @@
-from langchain_openai import ChatOpenAI
+from langchain_groq import ChatGroq
 from dotenv import load_dotenv
 
 load_dotenv()
 
-llm = ChatOpenAI(model="gpt-4o")
+llm = ChatGroq(model_name="llama-3.3-70b-versatile")
 
 result = llm.invoke("what is the square root of 49?")
 
